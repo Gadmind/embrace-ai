@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.1.0</version>
+        <version>3.5.13</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -18,9 +18,9 @@
 
     <properties>
         <java.version>21</java.version>
-        <spring.ai.alibaba.version>1.1.0.0</spring.ai.alibaba.version>
-        <spring.ai.alibaba.chat.memory.version>1.1.0</spring.ai.alibaba.chat.memory.version>
-        <spring.ai.alibaba.chat.memory.jdbc.version>1.1.0</spring.ai.alibaba.chat.memory.jdbc.version>
+        <spring.ai.alibaba.version>1.1.2.0</spring.ai.alibaba.version>
+        <spring.ai.alibaba.chat.memory.version>1.2.0</spring.ai.alibaba.chat.memory.version>
+        <spring.ai.alibaba.chat.memory.jdbc.version>1.2.0</spring.ai.alibaba.chat.memory.jdbc.version>
         <mysql.connector.version>8.0.33</mysql.connector.version>
         <hutool.version>5.8.38</hutool.version>
         <lombok.version>1.18.42</lombok.version>
