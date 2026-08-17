@@ -1,5 +1,6 @@
 package com.daop.springai.controller;
 
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -76,7 +77,8 @@ public class SE01_StreamController {
 
 
     @GetMapping(path = "/outPutStream", produces = MediaType.TEXT_EVENT_STREAM_VALUE + ";charset=UTF-8")
-    public SseEmitter outPutStream() {
+    public SseEmitter outPutStream(HttpServletResponse httpServletResponse) {
+        httpServletResponse.setCharacterEncoding("UTF-8");
         SseEmitter emitter = new SseEmitter(60_000L);
         threadPool.submit(() -> {
             String requestBody = """
