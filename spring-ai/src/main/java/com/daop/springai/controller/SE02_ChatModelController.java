@@ -85,6 +85,7 @@ public class SE02_ChatModelController {
                 .messages(systemMessage, userMessage)
                 .chatOptions(chatOptions)
                 .build();
+        System.out.println(prompt);
         return dashScopeChatModel.stream(prompt).mapNotNull(chatResponse -> chatResponse.getResult().getOutput().getText());
     }
 }
