@@ -31,6 +31,7 @@ public class SE03_ChatClientController implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
+        System.out.println("初始化聊天客户端1111");
         chatClient = ChatClient
                 .builder(chatModel)
                 .build();
